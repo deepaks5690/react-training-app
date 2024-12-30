@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import {  contactUsSubmit,askToAi } from "../services/apiService";
+import React, { useState } from "react";
+import {  askToAi } from "../services/apiService";
 
 
   import { Box, TextField, Button, Typography, Paper,Container } from '@mui/material';
