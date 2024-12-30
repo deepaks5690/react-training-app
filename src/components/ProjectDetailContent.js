@@ -1,13 +1,9 @@
 import React, { useState, useEffect } from "react";
-import PropTypes from 'prop-types';
-import Avatar from '@mui/material/Avatar';
-import AvatarGroup from '@mui/material/AvatarGroup';
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Grid from '@mui/material/Grid2';
 import Typography from '@mui/material/Typography';
-import { styled } from '@mui/material/styles';
 import {  getFrontProject } from "../services/apiService";
 import { Container,  Button} from '@mui/material';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';

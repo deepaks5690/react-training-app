@@ -18,7 +18,7 @@ import SearchRoundedIcon from '@mui/icons-material/SearchRounded';
 import RssFeedRoundedIcon from '@mui/icons-material/RssFeedRounded';
 import {  getFrontProjects,getFrontCategories } from "../services/apiService";
 import Pagination from '@mui/material/Pagination';
-import { useNavigate,useLocation,useParams } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 
 const SyledCard = styled(Card)(({ theme }) => ({

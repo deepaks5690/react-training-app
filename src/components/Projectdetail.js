@@ -3,7 +3,6 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Container from '@mui/material/Container';
 import AppAppBar from './AppAppBar';
 import ProjectDetailContent from './ProjectDetailContent';
-import Latest from './Latest';
 import Footer from './Footer';
 import AppTheme from '../shared-theme/AppTheme';
 
