@@ -13,6 +13,8 @@ import TexteditorComponent from "../common/TexteditorComponent";
 
 function AdminAddPageData() {
   const navigate = useNavigate();
+
+  const [loading, setLoading] = useState(false);
   const [productDescription, setProductDescription] = useState("");
   const [alertData, setAlertData] = useState({
     alert_show: false,
