@@ -283,7 +283,7 @@ export default function Footer() {
           <Link color="text.secondary" href="/">
           {websiteData.website_name}
           </Link>
-          &nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;
           {new Date().getFullYear()}
           </Typography>
           </div>
