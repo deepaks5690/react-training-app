@@ -240,7 +240,7 @@ export default function Footer() {
               About Us
             </Link>
             <Link color="text.secondary" variant="body2" href="/contact-us">
-              Contact Us 1
+              Contact Us
             </Link>
           </Box>
         </Box>
@@ -262,7 +262,7 @@ export default function Footer() {
               &nbsp;•&nbsp;
             </Typography>
             <Link color="text.secondary" variant="body2" href="/page/terms-and-conditions">
-              Terms of Service 1
+              Terms of Service
             </Link>
           <Typography variant="body2" sx={{ color: 'text.secondary', mt: 1 }}>
           {'Copyright © '}
