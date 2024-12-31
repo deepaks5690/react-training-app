@@ -26,7 +26,7 @@ export default function ProjectDetailContent() {
 
   useEffect(() => {
     getProjectData(project_slug);
-  }, []);
+  }, [project_slug]);
 
   
 

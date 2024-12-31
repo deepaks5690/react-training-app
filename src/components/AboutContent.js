@@ -19,10 +19,9 @@ export default function MainContent() {
 
 
   const [pageData, setPageData] = useState([]);
-  const [pageSlug, setpageSlug] = useState(page_slug);
   useEffect(() => {
     getProjectData(page_id);
-    }, [page_slug ]);
+    }, [page_slug,page_id]);
 
   
 
