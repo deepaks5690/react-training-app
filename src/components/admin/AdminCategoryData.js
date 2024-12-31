@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Box, IconButton, Tooltip } from "@mui/material";
+import { Box, IconButton, Tooltip, Typography } from "@mui/material";
 import { DataGrid } from "@mui/x-data-grid";
 import EditIcon from "@mui/icons-material/Edit";
 import DeleteIcon from "@mui/icons-material/Delete";
@@ -9,6 +9,7 @@ import { getAdminCategory,deleteAdminCategory } from "../../services/apiService"
 import CircularProgress from '@mui/material/CircularProgress';
 import { useNavigate } from 'react-router-dom';
 import DialogBoxComponent from "../common/DialogBoxComponent";
+import ButtonComponent from "../common/ButtonComponent";
 import Fab from '@mui/material/Fab';
 import AddIcon from '@mui/icons-material/Add';
 
@@ -94,6 +95,14 @@ function AdminCategoryData() {
   const [dialogOpen, setDialogOpen] = useState(false);
   const [operationId, setOperationId] = useState(0);
   
+
+  const [alertData, setAlertData] = useState({
+    alert_show: false,
+    alert_message: "",
+    alert_title: "",
+    alert_type: "",
+  });
+
   useEffect(() => {
     // Simulate a data fetch with a timeout
     getData();

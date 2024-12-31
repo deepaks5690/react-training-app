@@ -1,9 +1,13 @@
 import React, { useState, useEffect } from "react";
+import PropTypes from 'prop-types';
+import Avatar from '@mui/material/Avatar';
+import AvatarGroup from '@mui/material/AvatarGroup';
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Grid from '@mui/material/Grid2';
 import Typography from '@mui/material/Typography';
+import { styled } from '@mui/material/styles';
 import {  getFrontProject } from "../services/apiService";
 import { Container,  Button} from '@mui/material';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
@@ -26,7 +30,7 @@ export default function ProjectDetailContent() {
 
   useEffect(() => {
     getProjectData(project_slug);
-  }, [project_slug]);
+  }, []);
 
   
 
@@ -72,7 +76,7 @@ export default function ProjectDetailContent() {
                   <Box key={image_item.id} sx={{ textAlign: 'center' }}>
                     <img
                       src={process.env.REACT_APP_API_URL+'uploads/'+image_item.image_name}
-                      alt={`Product  ${image_item.id}`}
+                      alt={`Product Image ${image_item.id}`}
                       style={{
                         width: '100%',
                         height: 'auto',

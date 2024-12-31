@@ -72,7 +72,7 @@ function AdminAddProjectData() {
       getProjectData(id);
       getProjectImagesData(id);
     }
-  }, [id]);
+  }, []);
 
   const [loading, setLoading] = useState(false);
   const [alertData, setAlertData] = useState({
@@ -333,7 +333,11 @@ function AdminAddProjectData() {
 
   // Steppers //
   const [activeStep, setActiveStep] = React.useState(0);
-  const [skipped] = React.useState(new Set());
+  const [skipped, setSkipped] = React.useState(new Set());
+
+  const isStepOptional = (step) => {
+    return step === 1;
+  };
 
   const isStepSkipped = (step) => {
     return skipped.has(step);
