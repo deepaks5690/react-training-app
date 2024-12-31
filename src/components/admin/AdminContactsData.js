@@ -12,10 +12,6 @@ import DialogBoxComponent from "../common/DialogBoxComponent";
 import DialogBoxViewComponent from "../common/DialogBoxViewComponent";
 import Fab from '@mui/material/Fab';
 import AddIcon from '@mui/icons-material/Add';
-import TextInputComponent from "../common/TextInputComponent";
-import AlertComponent from '../common/AlertComponent';
-
-
 
 function AdminContactsData() {
 
@@ -91,17 +87,8 @@ function AdminContactsData() {
   const [operationId, setOperationId] = useState(0);
 
   
-  const [dialogPassordOpen, setDialogPassordOpen] = useState(false);
   const [recordData, setRecordData] = useState({});
   
-
-  const [alertData, setAlertData] = useState({
-    alert_show: false,
-    alert_message: "",
-    alert_title: "",
-    alert_type: "",
-  });
-
   useEffect(() => {
     // Simulate a data fetch with a timeout
     getUserData();
@@ -176,13 +163,7 @@ function AdminContactsData() {
     }
   };
 
-  const handleEdit = (id) => {
-    navigate('/admin/update_page/'+id);
-  };
-
-
-  
-
+ 
   const handleView = (id) => {
 
     const matchedRecord = userData.find(record => record.id === id);
@@ -216,25 +197,11 @@ function AdminContactsData() {
     setOperationId(0);
   };
 
-
-
-  
+ 
 
   const addUser = () => {
     navigate('/admin/create_page');
   };
-
-  const handleUpdatePassword = (id) => {
-    setDialogPassordOpen(true);
-    setOperationId(id);
-    
-    // Implement your delete logic here
-  };
-
-
-
-
-
 
 
 

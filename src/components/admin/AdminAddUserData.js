@@ -1,13 +1,12 @@
-import React, { useState, useEffect } from "react";
-import { Box, IconButton, Tooltip, Typography } from "@mui/material";
+import React, { useState } from "react";
+import { Box, Typography } from "@mui/material";
 
-import EditIcon from "@mui/icons-material/Edit";
-import DeleteIcon from "@mui/icons-material/Delete";
+
 import TopAdminBarComponents from "./common/TopAdminBarComponents";
 import AdminSideMenuComponents from "./common/AdminSideMenuComponents";
-import { getAdminUserProfile,addAdminUserProfile } from "../../services/apiService";
+import { addAdminUserProfile } from "../../services/apiService";
 import CircularProgress from '@mui/material/CircularProgress';
-import { useNavigate,useParams } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import ButtonComponent from "../common/ButtonComponent";
 import TextInputComponent from '../common/TextInputComponent';
 import AlertComponent from '../common/AlertComponent';
@@ -19,7 +18,7 @@ function AdminAddUserData() {
 
 
 
-  const [loading, setLoading] = useState(false);
+  const [loading] = useState(false);
   const [alertData, setAlertData] = useState({
     alert_show: false,
     alert_message: "",

@@ -72,7 +72,7 @@ export default function ProjectDetailContent() {
                   <Box key={image_item.id} sx={{ textAlign: 'center' }}>
                     <img
                       src={process.env.REACT_APP_API_URL+'uploads/'+image_item.image_name}
-                      alt={`Product Image ${image_item.id}`}
+                      alt={`Product  ${image_item.id}`}
                       style={{
                         width: '100%',
                         height: 'auto',
